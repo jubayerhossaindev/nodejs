@@ -1,0 +1,287 @@
+{
+  // Place your bagladesh workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+
+  "Author Information": {
+    "prefix": "comments ",
+    "body": [
+      "/**",
+      " * Title: [Enter the title of the script]",
+      " * Description: [Briefly describe the purpose of this script/module]",
+      " * Author: [Your Name or Team Name]",
+      " * Date: [Creation Date]",
+      " * Version: [Version Number, e.g., 1.0.0]",
+      " * License: [Specify the license, e.g., MIT, GPL]",
+      " * ",
+      " * Dependencies:",
+      " * - Node.js version: [Specify Node.js version, e.g., >=14.0.0]",
+      " * - External Modules: [List required npm packages, e.g., express, dotenv]",
+      " * ",
+      " * Installation:",
+      " * 1. Clone the repository: `git clone <repo-url>`",
+      " * 2. Navigate to the project folder: `cd <project-folder>`",
+      " * 3. Install dependencies: `npm install`",
+      " * 4. Run the script: `node <script-name>.js`",
+      " * ",
+      " * Usage:",
+      " * - Example command: `node index.js --port=3000`",
+      " * - API Endpoint: `GET /api/data` (if applicable)",
+      " * ",
+      " * Notes:",
+      " * - Ensure the required environment variables are set in `.env` (if applicable).",
+      " * - Modify the configuration settings in `config.js` as needed.",
+      " * - For development, use `nodemon` to auto-restart the server (`npm install -g nodemon`).",
+      " */",
+      "",
+    ],
+    "description": "Author Information",
+  },
+
+  "Print to console": {
+    "scope": "javascript,typescript",
+    "prefix": "l",
+    "body": ["console.log($1);", "$2"],
+    "description": "Log output to console",
+  },
+
+  // ---------- IMPORT SNIPPETS ----------
+
+  "Import Entire Module": {
+    "prefix": "impall",
+    "body": ["import * as $1 from '$2';"],
+    "description": "Import entire module as an alias",
+  },
+  "Import Default Module": {
+    "prefix": "impdef",
+    "body": ["import $1 from '$2';"],
+    "description": "Import default export from a module",
+  },
+  "Import Named Exports": {
+    "prefix": "impname",
+    "body": ["import { $1 } from '$2';"],
+    "description": "Import specific named exports from a module",
+  },
+  "Import Dynamic Module": {
+    "prefix": "impdynam",
+    "body": ["const $1 = await import('$2');"],
+    "description": "Dynamically import a module",
+  },
+
+  // ---------- EXPORT SNIPPETS ----------
+
+  "Export Named Variable": {
+    "prefix": "expvar",
+    "body": ["export const $1 = $2;"],
+    "description": "Export a named variable",
+  },
+  "Export Default Function": {
+    "prefix": "expdfn",
+    "body": ["export default function $1($2) {", "  $3", "}"],
+    "description": "Export a default function",
+  },
+  "Export Class": {
+    "prefix": "expclass",
+    "body": ["export class $1 {", "  constructor($2) {", "    $3", "  }", "  $4", "}"],
+    "description": "Export a class",
+  },
+  "Export Default Class": {
+    "prefix": "expdclass",
+    "body": ["export default class $1 {", "  constructor($2) {", "    $3", "  }", "  $4", "}"],
+    "description": "Export a default class",
+  },
+
+  // ---------- CONSOLE SNIPPETS ----------
+
+  "Console Log": {
+    "prefix": "cl",
+    "body": ["console.log($1);"],
+    "description": "Console log a value",
+  },
+  "Console Warn": {
+    "prefix": "clw",
+    "body": ["console.warn($1);"],
+    "description": "Console warning message",
+  },
+  "Console Error": {
+    "prefix": "cle",
+    "body": ["console.error($1);"],
+    "description": "Console error message",
+  },
+  "Console Table": {
+    "prefix": "clt",
+    "body": ["console.table($1);"],
+    "description": "Log an object/array in table format",
+  },
+  "Console Time": {
+    "prefix": "cltime",
+    "body": ["console.time('$1');", "$2", "console.timeEnd('$1');"],
+    "description": "Time execution of code",
+  },
+  "Console Clear": {
+    "prefix": "clclear",
+    "body": ["console.clear();"],
+    "description": "Clear the console",
+  },
+  "Console Group": {
+    "prefix": "clgroup",
+    "body": ["console.group('$1');", "$2", "console.groupEnd();"],
+    "description": "Console group for nested logs",
+  },
+  "Console Count": {
+    "prefix": "clcount",
+    "body": ["console.count('$1');"],
+    "description": "Console count number of calls",
+  },
+
+  // ---------- CORE NODE.JS MODULE IMPORTS ----------
+
+  "Import File System Module": {
+    "prefix": "impfs",
+    "body": ["import fs from 'fs';"],
+    "description": "Import Node.js File System module",
+  },
+  "Import Path Module": {
+    "prefix": "imppath",
+    "body": ["import path from 'path';"],
+    "description": "Import Node.js Path module",
+  },
+  "Import HTTP Module": {
+    "prefix": "imphttp",
+    "body": ["import http from 'http';"],
+    "description": "Import Node.js HTTP module",
+  },
+  "Import HTTPS Module": {
+    "prefix": "imphttps",
+    "body": ["import https from 'https';"],
+    "description": "Import Node.js HTTPS module",
+  },
+  "Import OS Module": {
+    "prefix": "impos",
+    "body": ["import os from 'os';"],
+    "description": "Import Node.js OS module",
+  },
+  "Import Crypto Module": {
+    "prefix": "impcrypto",
+    "body": ["import crypto from 'crypto';"],
+    "description": "Import Node.js Crypto module",
+  },
+  "Import EventEmitter": {
+    "prefix": "impevent",
+    "body": ["import { EventEmitter } from 'events';"],
+    "description": "Import Node.js EventEmitter module",
+  },
+  "Import Readline Module": {
+    "prefix": "imprl",
+    "body": ["import readline from 'readline';"],
+    "description": "Import Node.js Readline module",
+  },
+  "Import Stream Module": {
+    "prefix": "impstream",
+    "body": ["import { Readable, Writable, Duplex, Transform } from 'stream';"],
+    "description": "Import Node.js Stream module",
+  },
+  "Import Child Process Module": {
+    "prefix": "impchild",
+    "body": ["import { exec, spawn } from 'child_process';"],
+    "description": "Import Node.js Child Process module",
+  },
+  "Import Net Module": {
+    "prefix": "impnet",
+    "body": ["import net from 'net';"],
+    "description": "Import Node.js Net module",
+  },
+  "Import URL Module": {
+    "prefix": "impurl",
+    "body": ["import { URL } from 'url';"],
+    "description": "Import Node.js URL module",
+  },
+  "Import Query String Module": {
+    "prefix": "impqs",
+    "body": ["import querystring from 'querystring';"],
+    "description": "Import Node.js Query String module",
+  },
+
+  // ---------- UTILITIES SNIPPETS ----------
+
+  "JSON Parse": {
+    "prefix": "jsonparse",
+    "body": ["const $1 = JSON.parse('$2');"],
+    "description": "Parse a JSON string",
+  },
+  "JSON Stringify": {
+    "prefix": "jsonstringify",
+    "body": ["const $1 = JSON.stringify($2);"],
+    "description": "Stringify an object to JSON",
+  },
+  "Regular Expression Test": {
+    "prefix": "regtest",
+    "body": ["const regex = /$1/;", "const result = regex.test('$2');"],
+    "description": "Test if a regular expression matches",
+  },
+  "Regular Expression Match": {
+    "prefix": "regmatch",
+    "body": ["const regex = /$1/;", "const result = '$2'.match(regex);"],
+    "description": "Match string with regular expression",
+  },
+  "Create New Date": {
+    "prefix": "newdate",
+    "body": ["const $1 = new Date('$2');"],
+    "description": "Create a new Date object",
+  },
+
+  // ---------- FILE SYSTEM SNIPPETS ----------
+
+  "Read File Asynchronously": {
+    "prefix": "fsread",
+    "body": [
+      "fs.readFile('$1', 'utf-8', (err, data) => {",
+      "  if (err) throw err;",
+      "  console.log(data);",
+      "});",
+    ],
+    "description": "Read file asynchronously",
+  },
+  "Write File Asynchronously": {
+    "prefix": "fswrite",
+    "body": [
+      "fs.writeFile('$1', '$2', (err) => {",
+      "  if (err) throw err;",
+      "  console.log('File written successfully');",
+      "});",
+    ],
+    "description": "Write to a file asynchronously",
+  },
+  "Check If File Exists": {
+    "prefix": "fsexists",
+    "body": ["fs.existsSync('$1');"],
+    "description": "Check if a file exists",
+  },
+
+  // ---------- MISCELLANEOUS SNIPPETS ----------
+
+  "Set Timeout": {
+    "prefix": "settimeout",
+    "body": ["setTimeout(() => {", "  $1", "}, $2);"],
+    "description": "Set a timeout",
+  },
+  "Set Interval": {
+    "prefix": "setinterval",
+    "body": ["setInterval(() => {", "  $1", "}, $2);"],
+    "description": "Set an interval",
+  },
+  "Clear Timeout": {
+    "prefix": "cleartimeout",
+    "body": ["clearTimeout($1);"],
+    "description": "Clear a timeout",
+  },
+  "Clear Interval": {
+    "prefix": "clearinterval",
+    "body": ["clearInterval($1);"],
+    "description": "Clear an interval",
+  },
+}

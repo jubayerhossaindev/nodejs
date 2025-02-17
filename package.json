@@ -1,0 +1,40 @@
+{
+  "name": "bagladesh",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch src\\projects\\uptimemonitor\\index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --watch",
+    "format:check": "prettier . --check",
+    "format:fix": "prettier . --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.26.8",
+    "@babel/eslint-parser": "^7.26.8",
+    "@babel/preset-env": "^7.26.8",
+    "@eslint/js": "^9.20.0",
+    "eslint": "^9.20.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^17.15.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-promise": "^7.2.1",
+    "eslint-plugin-security": "^3.0.1",
+    "eslint-plugin-sonarjs": "^3.0.1",
+    "eslint-plugin-unicorn": "^56.0.1",
+    "generator-code": "^1.11.6",
+    "globals": "^15.15.0",
+    "prettier": "^3.5.0",
+    "taze": "^18.5.0",
+    "vsce": "^2.15.0",
+    "yo": "^5.1.0"
+  }
+}

@@ -1,0 +1,322 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit", // Fix ESLint issues when explicitly invoked
+    "source.organizeImports": "explicit", // Organize imports when explicitly invoked
+    "source.fixAll": "explicit", // Apply all available fixes from all enabled sources when explicitly invoked
+    "source.formatDocument": "explicit", // Format the document when explicitly invoked
+    "source.rename": "explicit", // Rename variables/functions when explicitly invoked
+    "source.synchronize": "explicit", // Synchronize code changes when explicitly invoked
+    "source.removeUnused": "explicit", // Remove unused variables/functions when explicitly invoked
+    "source.addMissingImports": "explicit", // Add missing imports when explicitly invoked
+    "source.extractFunction": "explicit", // Extract selected code into a function when explicitly invoked
+    "source.addComments": "explicit", // Add comments based on context when explicitly invoked
+    "source.removeUnusedImports": "explicit", // Remove unused imports when explicitly invoked
+    "source.generateTypeDefinitions": "explicit", // Generate TypeScript type definitions when explicitly invoked
+    "source.moveToNewFile": "explicit", // Move selected code to a new file when explicitly invoked
+    "source.sortMembers": "explicit", // Sort class members or object properties when explicitly invoked
+    "source.createInterface": "explicit", // Create TypeScript interfaces from types/classes when explicitly invoked
+    "source.generateGetterSetter": "explicit" // Generate getter and setter methods when explicitly invoked
+  },
+
+  "prettier.requireConfig": true,
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "json"],
+
+  // Node.js specific settings
+  "files.associations": {
+    "*.js": "javascript",
+    "*.json": "jsonc" // Treat JSON files as JSON with comments, useful for config files
+  },
+
+  "javascript.suggest.autoImports": true, // Enable auto-import suggestions
+  "javascript.updateImportsOnFileMove.enabled": "always", // Automatically update imports when files are moved
+  "typescript.suggest.autoImports": true, // Enable auto-import for TypeScript as well
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // CodeLens for references and tests
+  "editor.codeLens": true, // Enable CodeLens (shows references and tests above functions)
+  "typescript.referencesCodeLens.enabled": true, // Enable for TypeScript too
+  "javascript.referencesCodeLens.enabled": true,
+
+  // Files to exclude from searches and workspace
+  "files.exclude": {
+    "node_modules": false, // Hide node_modules folder
+    "dist": false, // Hide dist folder
+    "coverage": true // Hide coverage folder
+  },
+
+  // Automatically run ESLint or npm scripts when certain files change
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "eslint.run": "onSave", // Run ESLint when saving
+  "npm.runSilent": true, // Disable npm logs in the output
+
+  // ============================
+  // 🎨 Theme & Font Settings
+  // ============================
+  "workbench.colorTheme": "Andromeda Italic",
+  "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+  "editor.fontSize": 16,
+  "editor.lineHeight": 22,
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontSize": 16,
+
+  // ============================
+  // 🖊️ Formatting & Whitespace
+  // ============================
+
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.trimAutoWhitespace": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  // ============================
+  // 💾 Auto-Save & File Settings
+  // ============================
+  "files.autoSave": "afterDelay",
+  "files.autoSaveWhenNoErrors": true,
+
+  // ============================
+  // 🔍 Cursor & Navigation
+  // ============================
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "explicit",
+  "editor.cursorStyle": "line",
+  "editor.scrollBeyondLastLine": false,
+
+  // ============================
+  // 📌 Code Folding & Guides
+  // ============================
+  "editor.folding": true,
+  "editor.guides.bracketPairs": true,
+  "editor.rulers": [80, 100, 120],
+
+  // ============================
+  // 🔎 IntelliSense & Suggestions
+  // ============================
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.quickSuggestionsDelay": 50,
+  "typescript.suggest.completeFunctionCalls": true,
+  "javascript.suggest.completeFunctionCalls": true,
+  "editor.snippetSuggestions": "top",
+  "editor.inlineSuggest.enabled": true,
+
+  // ============================
+  // ⚠️ Error & Warning Display
+  // ============================
+  "problems.decorations.enabled": true,
+  "problems.showCurrentInStatus": true,
+
+  // ============================
+  // 📜 Outline & Breadcrumbs
+  // ============================
+  "breadcrumbs.enabled": true,
+  "outline.icons": true,
+
+  // ============================
+  // 🛠️ Debugging & Console
+  // ============================
+  "editor.inlayHints.enabled": "on",
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "debug.console.fontSize": 16,
+  "debug.console.wordWrap": true,
+
+  // ============================
+  // 🌐 Comment Translation
+  // ============================
+  "commentTranslate.targetLanguage": "bn",
+  "commentTranslate.source": "Google",
+  "commentTranslate.hover.enabled": true,
+
+  // ============================
+  // 🎨 Prettier Formatting
+  // ============================
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.semi": true,
+  "prettier.useTabs": false,
+  "prettier.arrowParens": "always",
+  "prettier.bracketSpacing": true,
+  "prettier.printWidth": 100,
+  "prettier.tabWidth": 2,
+  "prettier.jsxSingleQuote": true,
+
+  // ============================
+  // 📌 JavaScript & TypeScript Validation
+  // ============================
+  "javascript.validate.enable": true,
+  "typescript.validate.enable": true,
+
+  // ============================
+  // ⚡ Emmet Settings
+  // ============================
+
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showAbbreviationSuggestions": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "vue": "html",
+    "astro": "html",
+    "css": "css",
+    "html": "html",
+    "xml": "xml",
+    "python": "html",
+    "php": "html"
+  },
+  "emmet.excludeLanguages": ["markdown", "plaintext", "json"],
+  "emmet.extensionsPath": [],
+  "emmet.optimizeStylesheetParsing": true,
+  "emmet.preferences": {
+    "inlineBreak": true,
+    "prependSelfClosingSlash": true,
+    "tagCase": "lower",
+    "attrCase": "lower",
+    "attrQuotes": "double",
+    "omitOptionalTags": true,
+    "showExpandedAbbreviation": "always",
+    "useInlineCompletions": true,
+    "newlineAfterKey": true,
+    "noImplicitClosingTag": false,
+    "cssFormat": "expanded",
+    "cssSelectorsFormat": "expanded",
+    "cssMaxLineLength": 80,
+    "htmlFormat": "html5",
+    "jsFormat": "javascript",
+    "jsxFormat": "jsx",
+    "customTagFormatting": true
+  },
+  "emmet.showExpandedAbbreviation": "always",
+  "emmet.useInlineCompletions": true,
+  "emmet.variables": {},
+  "emmet.syntaxProfiles": {
+    "html": {
+      "tagCase": "lower",
+      "attrCase": "lower",
+      "attrQuotes": "double",
+      "omitOptionalTags": true,
+      "html5": true,
+      "selfClosingTags": [
+        "area",
+        "base",
+        "br",
+        "col",
+        "embed",
+        "hr",
+        "img",
+        "input",
+        "link",
+        "meta",
+        "source",
+        "track",
+        "wbr"
+      ]
+    },
+    "css": {
+      "profile": "css3",
+      "indentation": "  ",
+      "wrapAt": 80
+    },
+    "xml": {
+      "attrQuotes": "double",
+      "tagCase": "lower",
+      "xmlns": "http://www.w3.org/2000/svg"
+    },
+    "javascript": {
+      "file": "javascriptreact",
+      "useSingleQuotes": true,
+      "bracesOnSameLine": true
+    },
+    "typescript": {
+      "file": "typescriptreact",
+      "useSingleQuotes": true,
+      "bracesOnSameLine": true
+    },
+    "python": {
+      "file": "html"
+    },
+    "php": {
+      "file": "html"
+    }
+  },
+
+  "files.watcherExclude": { "**/node_modules/**": true, "**/dist/**": true, "**/build/**": true },
+
+  // ============================
+  // 🏆 Miscellaneous
+  // ============================
+  "terminal.integrated.enableVisualBell": true,
+  "terminal.integrated.env.windows": {
+    "LANG": "bn_BD.UTF-8"
+  },
+  "editor.linkedEditing": true,
+  "css.validate": true,
+  "editor.inlayHints.padding": true,
+  "javascript.inlayHints.parameterTypes.enabled": false,
+  "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "javascript.inlayHints.variableTypes.enabled": false,
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": false,
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
+
+  "eslint.lintTask.enable": true,
+  "eslint.codeAction.disableRuleComment": {
+    "enable": true,
+    "location": "separateLine",
+    "commentStyle": "line"
+  },
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.codeActionsOnSave.mode": "all",
+  "eslint.codeActionsOnSave.rules": null,
+  "eslint.debug": true,
+  "eslint.enable": true,
+  "eslint.format.enable": true,
+  "eslint.nodeEnv": null,
+  "eslint.nodePath": null,
+  "eslint.execArgv": null,
+  "eslint.options": {},
+  "eslint.ignoreUntitled": false,
+  "eslint.useFlatConfig": true,
+  "eslint.lintTask.options": ".",
+  "eslint.notebooks.rules.customizations": [],
+  "eslint.onIgnoredFiles": "warn",
+  "eslint.probe": [
+    "astro",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "mdx",
+    "vue",
+    "markdown",
+    "json",
+    "jsonc"
+  ],
+  "eslint.problems.shortenToSingleLine": false,
+  "eslint.quiet": false,
+  "eslint.rules.customizations": [],
+  "eslint.runtime": null,
+
+  "eslint.trace.server": "messages"
+}
