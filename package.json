@@ -15,9 +15,9 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@babel/core": "^7.26.8",
+    "@babel/core": "^7.26.9",
     "@babel/eslint-parser": "^7.26.8",
-    "@babel/preset-env": "^7.26.8",
+    "@babel/preset-env": "^7.26.9",
     "@eslint/js": "^9.20.0",
     "eslint": "^9.20.1",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -28,13 +28,10 @@
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-security": "^3.0.1",
-    "eslint-plugin-sonarjs": "^3.0.1",
-    "eslint-plugin-unicorn": "^56.0.1",
-    "generator-code": "^1.11.6",
+    "eslint-plugin-sonarjs": "^3.0.2",
+    "eslint-plugin-unicorn": "^57.0.0",
     "globals": "^15.15.0",
-    "prettier": "^3.5.0",
-    "taze": "^18.5.0",
-    "vsce": "^2.15.0",
-    "yo": "^5.1.0"
+    "prettier": "^3.5.1",
+    "taze": "^18.5.0"
   }
 }
